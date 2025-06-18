@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-import { ConfigProvider, Layout } from "antd";
+import { Breadcrumb, ConfigProvider, Layout, Typography } from "antd";
+import { Footer, Content } from "antd/es/layout/layout";
+import PortfolioHeader from "@/components/PortfolioHeader";
+
+const { Title, Paragraph, Text, Link } = Typography;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +33,33 @@ export default function RootLayout({
       <body>
         <AntdRegistry>
           <ConfigProvider>
-            <Layout style={{ minHeight: "100vh" }}>{children}</Layout>
+            <Layout style={{ minHeight: "100vh" }}>
+              <PortfolioHeader />
+              <Content style={{ padding: "0 48px" }}>
+                <Breadcrumb
+                  style={{ margin: "16px 0" }}
+                  items={[
+                    { title: "Home" },
+                    { title: "List" },
+                    { title: "App" },
+                  ]}
+                />
+                <div
+                  style={{
+                    // background: colorBgContainer,
+                    minHeight: 280,
+                    padding: 24,
+                    // borderRadius: borderRadiusLG,
+                  }}
+                >
+                  Content
+                  {children}
+                </div>
+              </Content>
+              <Footer style={{ textAlign: "center" }}>
+                Ant Design ©{new Date().getFullYear()} Created by Ant UED
+              </Footer>
+            </Layout>
           </ConfigProvider>
         </AntdRegistry>
       </body>
