@@ -1,4 +1,4 @@
-import { ConfigProvider, Menu, MenuProps, Typography } from "antd";
+import { ConfigProvider, Menu, MenuProps, theme, Typography } from "antd";
 import React from "react";
 import { Header } from "antd/es/layout/layout";
 import Title from "antd/es/typography/Title";
@@ -38,10 +38,21 @@ const items: MenuItem[] = [
 
 const PortfolioHeader: React.FC = () => {
   return (
-    <ConfigProvider>
-      <Header style={{ display: "flex", alignItems: "center" }}>
+    <ConfigProvider
+      theme={{
+        token: {},
+        components: {
+          Layout: { headerBg: "#E63946" },
+          Menu: { itemBg: "none" },
+        },
+      }}
+    >
+      <Header style={{ display: "flex" }}>
         <Typography>
-          <Title>Tai Ye En</Title>
+          <Title>
+            <span style={{ color: "#1D3557" }}>Tai</span>{" "}
+            <span style={{ color: "white" }}>Ye En</span>
+          </Title>
         </Typography>
         <Menu
           theme="light"
