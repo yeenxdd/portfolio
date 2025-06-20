@@ -42,12 +42,21 @@ const PortfolioHeader: React.FC = () => {
       theme={{
         token: {},
         components: {
-          Layout: { headerBg: "#E63946" },
+          Layout: { headerBg: "#E63946", headerPadding: "0 20px" },
           Menu: { itemBg: "none" },
         },
       }}
     >
-      <Header style={{ display: "flex" }}>
+      <Header
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 1,
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
         <Typography>
           <Title>
             <span style={{ color: "#1D3557" }}>Tai</span>{" "}

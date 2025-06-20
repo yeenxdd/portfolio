@@ -5,6 +5,7 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { Breadcrumb, ConfigProvider, Layout, Typography } from "antd";
 import { Footer, Content } from "antd/es/layout/layout";
 import PortfolioHeader from "@/components/PortfolioHeader";
+import Portfolio from "@/components/tai-ye-en-portfolio";
 
 const { Title, Paragraph, Text, Link } = Typography;
 
@@ -34,7 +35,8 @@ export default function RootLayout({
         <AntdRegistry>
           <ConfigProvider>
             <Layout style={{ minHeight: "100vh" }}>
-              <PortfolioHeader />
+              <Portfolio />
+              {/* <PortfolioHeader />
               <Content style={{ padding: "0 48px" }}>
                 <Breadcrumb
                   style={{ margin: "16px 0" }}
@@ -58,7 +60,7 @@ export default function RootLayout({
               </Content>
               <Footer style={{ textAlign: "center" }}>
                 Ant Design ©{new Date().getFullYear()} Created by Ant UED
-              </Footer>
+              </Footer> */}
             </Layout>
           </ConfigProvider>
         </AntdRegistry>
