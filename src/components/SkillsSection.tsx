@@ -112,7 +112,7 @@ const SkillsSection: React.FC = () => {
                         {category.skills.map((skill, i) => (
                           <div key={i} className="text-center">
                             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 hover:bg-white/20 transition-colors">
-                              <div className="text-gray-300 font-medium">
+                              <div className="text-gray-300 font-medium text-xs md:text-xl">
                                 {skill}
                               </div>
                             </div>

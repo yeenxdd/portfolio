@@ -23,7 +23,8 @@ const ContactSection = () => (
           </div>
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/tai-ye-en/"
+          target="_blank"
           className="flex flex-col items-center space-y-4 p-6 bg-gradient-to-br from-blue-800/20 to-blue-600/20 rounded-2xl backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300"
         >
           <Linkedin className="text-blue-400" size={32} />
@@ -33,7 +34,8 @@ const ContactSection = () => (
           </div>
         </a>
         <a
-          href="#"
+          href="https://github.com/yeenxdd"
+          target="_blank"
           className="flex flex-col items-center space-y-4 p-6 bg-gradient-to-br from-gray-800/20 to-gray-600/20 rounded-2xl backdrop-blur-sm border border-gray-500/20 hover:border-gray-400/40 transition-all duration-300"
         >
           <Github className="text-gray-400" size={32} />
