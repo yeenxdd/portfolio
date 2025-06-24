@@ -1,23 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  MapPin,
-  Code,
-  Database,
-  Server,
-  Globe,
-  ChevronDown,
-  ExternalLink,
-  Calendar,
-  Users,
-  TrendingUp,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
+import React from "react";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import ExperienceSection from "./ExperienceSection";

@@ -18,6 +18,8 @@ const Navigation: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    // Check if the page is scrolled on initial load
+    setIsScrolled(window.scrollY > 50);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
