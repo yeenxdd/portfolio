@@ -64,7 +64,7 @@ const Navigation: React.FC = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className={`capitalize hover:text-purple-400 transition-colors ${activeSection === item ? "text-purple-400" : ""}`}
+                className={`capitalize cursor-pointer hover:text-purple-400 transition-colors ${activeSection === item ? "text-purple-400" : ""}`}
               >
                 {item}
               </button>
