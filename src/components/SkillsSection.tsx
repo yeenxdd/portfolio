@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import {
   Code,
   Database,
@@ -52,7 +54,7 @@ const skillCategories: SkillCategory[] = [
 ];
 
 const SkillsSection: React.FC = () => {
-  const [currentSkillCategory, setCurrentSkillCategory] = React.useState(0);
+  const [currentSkillCategory, setCurrentSkillCategory] = useState(0);
 
   const nextSkillCategory = () => {
     setCurrentSkillCategory((prev) => (prev + 1) % skillCategories.length);

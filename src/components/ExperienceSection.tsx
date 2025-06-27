@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface Experience {
@@ -39,7 +41,7 @@ const experiences: Experience[] = [
 ];
 
 const ExperienceSection: React.FC = () => {
-  const [currentExperience, setCurrentExperience] = React.useState(0);
+  const [currentExperience, setCurrentExperience] = useState(0);
 
   const nextExperience = () => {
     setCurrentExperience((prev) => (prev + 1) % experiences.length);

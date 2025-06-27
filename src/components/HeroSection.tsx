@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from "react";
 import { Mail, ChevronDown, MapPin } from "lucide-react";
 import Typed from "typed.js";
