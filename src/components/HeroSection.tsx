@@ -61,7 +61,7 @@ const HeroSection = () => {
             <span>Contact Me</span>
           </a>
           <a
-            href="FullStackDeveloperResume.pdf"
+            href="resume.pdf"
             target="_blank"
             className="flex items-center space-x-2 bg-transparent border border-purple-400 text-white hover:bg-purple-400/10 px-6 py-3 rounded-full transition-colors"
           >
